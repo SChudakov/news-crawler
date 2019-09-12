@@ -4,7 +4,7 @@ MAINTAINER Semen Chudakov "semen.chudakov7@gmail.com"
 MAINTAINER Timofey Chudakov "timofey.chudakov@gmail.com"
 MAINTAINER Oleksii Davydenko "olexdav@gmail.com"
 
-# docker build -t newspelase_centos .
+# docker build -t newsplease_centos .
 # docker run -ti -p 9200:9200 -p 9300:9300 -p 5000:5000 -e "discovery.type=single-node" newsplease_centos bash
 
 
@@ -21,9 +21,10 @@ EXPOSE 5000
 
 RUN pip3.6 install news-please
 RUN pip3.6 install --upgrade elasticsearch
+RUN pip3.6 install --upgrade urllib3
 RUN mkdir -p /root/news-please-repo/config
 COPY ./config /root/news-please-repo/config
-#/root/news-please-repo/config
+
 
 COPY startup.sh startup.sh
-CMD ["./startup.sh"]
+CMD ["bash", "./startup.sh"]
