@@ -16,7 +16,7 @@ git clone https://github.com/SChudakov/news-crawler.git
 cd news-crawler
 
 docker build -t news_crawler .
-docker run -ti -p 9200:9200 -p 9300:9300 -p 5000:5000 -e "discovery.type=single-node" news_crawler bash
+docker run -ti -p 9200:9200 -p 9300:9300 -p 5000:5000 -e "discovery.type=single-node" news_crawler
 ```
 
 ## Access Data
