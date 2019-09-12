@@ -1,0 +1,70 @@
+{
+  "base_urls" : [
+    {
+      "url": "https://www.unian.ua/",
+      "crawler": "RecursiveCrawler",
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+    },
+    {
+      "url": "https://ukr.segodnya.ua/",
+      "crawler": "RecursiveCrawler",
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+    },
+    {
+      "url": "https://www.ukr.net/ua/",
+      "crawler": "RecursiveCrawler",
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+    },
+    {
+      "url": "https://24tv.ua/ukrayina_tag1119/",
+      "crawler": "RecursiveCrawler",
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+    },
+    {
+      "url": "https://tsn.ua",
+      "crawler": "RecursiveCrawler",
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+    },
+    {
+      "url": "https://censor.net.ua/ua/news/all",
+      "crawler": "RecursiveCrawler",
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+    }
+  ]
+}
