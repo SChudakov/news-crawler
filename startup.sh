@@ -1,9 +1,14 @@
 #!/bin/bash
 
+echo "Starting elasticsearch server"
 /usr/local/bin/docker-entrypoint.sh &
-sleep 20
+echo "waiting 30 seconds"
+sleep 30
+echo "starting elsaticsearchHQ"
 python3.6 application.py &
-sleep 10
+echo "waiting 20 seconds"
+sleep 20
 news-please > /dev/null 2>&1 &
-sleep 10
+echo "starting crawler"
+sleep 20
 news-please

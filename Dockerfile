@@ -5,7 +5,7 @@ MAINTAINER Timofey Chudakov "timofey.chudakov@gmail.com"
 MAINTAINER Oleksii Davydenko "olexdav@gmail.com"
 
 RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm
-RUN yum update
+RUN yum update -y
 RUN yum install -y python36u python36u-libs python36u-devel python36u-pip git
 RUN pip3.6 install --upgrade pip
 
